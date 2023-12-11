@@ -1,27 +1,82 @@
-import { MdOutlineFileDownload } from "react-icons/md";
-import bannerimage from "../../assets/bannerimage.png"
+import Heading from "../../components/Shared/Heading/Heading";
+import Banner from "./Banner";
+import Experience from "./Experience";
+import { SlEnergy } from "react-icons/sl";
+import { TfiCup } from "react-icons/tfi";
+
+import Skills from "./Skills";
+import educationIcon from "../../assets/education.png";
 
 const Home = () => {
   return (
-    <div>
+    <div className="text-white">
       {/* Banner  */}
-      <section id="banner" className="px-12 lg:px-20 min-h-[400px] bg-primary flex items-center overflow-hidden">
-        <div className=" flex-1 space-y-2 h-full ">
-          <div className="space-y-2">
-            <h2 className="text-2xl md:text-4xl font-semibold">Hi! I&apos;m</h2>
-            <h1 className="text-3xl md:text-5xl font-bold">MD. ANARUL ISLAM</h1>
+      <Banner />
+      {/* about  */}
+      <section id="about" className="px-12 py-20 lg:px-20  bg-slate-800  my-12">
+        <Heading
+          title="Crafting stories about my ambission"
+          subtitle="About me"
+          center={true}
+        />
+        <div className="flex flex-col md:flex-row items-start space-y-12 gap-5 my-12 mt-20">
+          {/* ambition  */}
+          <div className="space-y-5">
+            <div className="text-primary">
+              <SlEnergy size={50} />
+            </div>
+            <h2 className="text-3xl font-medium">My ambition</h2>
+            <p className="text-lg">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit sed thisnquia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+              ipsum quia dolor sit amet
+            </p>
           </div>
-          <p className="text-lg">
-            I&apos;m a juniof front-end (MERN Stack) developer.
-          </p>
-          <div>
-            <button className="border flex items-center gap-2 text-lg capitalize rounded-full p-2 px-4 font-medium btn btn-outline hover:text-primary duration-500 mt-6">Get Resume <MdOutlineFileDownload size={25} /></button>
+          {/* purpost  */}
+          <div className="space-y-5">
+            <div className="text-primary">
+              <TfiCup size={38} />
+            </div>
+            <h2 className="text-3xl font-medium">My purpose</h2>
+            <p className="text-lg">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit sed thisnquia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+              ipsum quia dolor sit amet
+            </p>
           </div>
         </div>
-        <div className="hidden sm:flex  items-end h-full justify-end w-full flex-1">
-            <img className="object-cover -mb-14 lg:mb-0" src={bannerimage} alt="banner image" />
+        {/* education  */}
+        <div>
+          <img className="w-[50px]" src={educationIcon} alt="icon" />
+          <h2 className="text-3xl font-medium">Education</h2>
+          <div className="flex flex-col md:flex-row gap-5 my-5">
+            {/* card 1  */}
+            <div className="card  border border-slate-700 text-white rounded-md">
+              <div className="card-body space-y-1">
+                <h2 className="text-xl font-semibold  border-b-[2px] border-b-primary w-16 pb-2">SSC</h2>
+                <h2 className="text-2xl font-medium">Taldighi ML High School</h2>
+                <p className="font-semibold text-primary">2018-2019</p>
+                <p>I&apos;m enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+              </div>
+            </div>
+            {/* card 1  */}
+            <div className="card  border border-slate-700 text-white rounded-md">
+              <div className="card-body space-y-1">
+                <h2 className="text-xl font-semibold  border-b-[2px] border-b-primary w-60 pb-2">Diploma in Engineering</h2>
+                <h2 className="text-2xl font-medium">Mymensingh Poytechnic Institute</h2>
+                <p className="font-semibold text-primary">2019-2023</p>
+                <p>I&apos;m enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      {/* skills  */}
+      <Skills />
+      {/* experience */}
+      <Experience />
     </div>
   );
 };
