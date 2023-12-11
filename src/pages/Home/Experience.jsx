@@ -4,16 +4,16 @@ const Experience = () => {
     return (
         <section
         id="experience"
-        className="px-12 py-20 lg:px-20  bg-slate-800 flex flex-col md:flex-row items-center gap-32 md:gap-4 "
+        className="px-12 py-20 lg:px-20  bg-slate-800 flex flex-col md:flex-row items-center md:gap-32 gap-12 "
       >
         {/* left */}
-        <div className="basis-1/2">
+        <div className="basis-1/2  w-full">
           <Heading title={"My experience field here"} subtitle={"Experience"}/>
         </div>
         {/* right  */}
         <div className="basis-1/2 w-full space-y-6 text-white">
         {/* card 1  */}
-          <div className="bg-slate-700 p-8 space-y-8">
+          <div className="bg-slate-700 p-8 space-y-8 rounded-lg">
             <div className="flex items-center justify-between">
             <h2 className="text-2xl font-medium">Communication</h2>
             <h2>80%</h2>
@@ -21,7 +21,7 @@ const Experience = () => {
             <progress className="progress " value="80" max="100"></progress>
           </div>
         {/* card 1  */}
-          <div className="bg-slate-700 p-8 space-y-8">
+          <div className="bg-slate-700 p-8 space-y-8 rounded-lg">
             <div className="flex items-center justify-between">
             <h2 className="text-2xl font-medium">Leadership</h2>
             <h2>75%</h2>
@@ -29,7 +29,7 @@ const Experience = () => {
             <progress className="progress " value="75" max="100"></progress>
           </div>
         {/* card 1  */}
-          <div className="bg-slate-700 p-8 space-y-8">
+          <div className="bg-slate-700 p-8 space-y-8 rounded-lg">
             <div className="flex items-center justify-between">
             <h2 className="text-2xl font-medium">Team work</h2>
             <h2>85%</h2>
@@ -37,7 +37,7 @@ const Experience = () => {
             <progress className="progress " value="85" max="100"></progress>
           </div>
         {/* card 1  */}
-          <div className="bg-slate-700 p-8 space-y-8">
+          <div className="bg-slate-700 p-8 space-y-8 rounded-lg">
             <div className="flex items-center justify-between">
             <h2 className="text-2xl font-medium">Flexibility</h2>
             <h2>90%</h2>

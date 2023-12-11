@@ -2,9 +2,11 @@ import Heading from "../../components/Shared/Heading/Heading";
 import { SlEnergy } from "react-icons/sl";
 import { TfiCup } from "react-icons/tfi";
 import educationIcon from "../../assets/education.png";
+import { BiSolidInstitution } from "react-icons/bi";
+import Resume from "../../components/Shared/Resume/Resume";
 const About = () => {
   return (
-    <section id="about" className="px-12 py-20 lg:px-20  bg-slate-800  my-12">
+    <section id="about" className="px-12 py-20 lg:px-20  bg-slate-800  my-2">
       <Heading
         title="Crafting stories about my ambission"
         subtitle="About me"
@@ -25,8 +27,8 @@ const About = () => {
           </p>
         </div>
         {/* purpost  */}
-        <div className="space-y-5">
-          <div className="text-primary">
+        <div className="space-y-5 ">
+          <div className="text-primary mt-0 md:-mt-10 ">
             <TfiCup size={38} />
           </div>
           <h2 className="text-3xl font-medium">My purpose</h2>
@@ -49,7 +51,7 @@ const About = () => {
               <h2 className="text-xl font-semibold  border-b-[2px] border-b-primary w-16 pb-2">
                 SSC
               </h2>
-              <h2 className="text-2xl font-medium">Taldighi ML High School</h2>
+              <h2 className="text-2xl font-medium flex items-end gap-2"><BiSolidInstitution className="text-primary" size={30}/> Taldighi ML High School</h2>
               <p className="font-semibold text-primary">2018-2019</p>
               <p>
                 I&apos;m enim ipsam voluptatem quia voluptas sit aspernatur aut
@@ -64,9 +66,7 @@ const About = () => {
               <h2 className="text-xl font-semibold  border-b-[2px] border-b-primary w-60 pb-2">
                 Diploma in Engineering
               </h2>
-              <h2 className="text-2xl font-medium">
-                Mymensingh Poytechnic Institute
-              </h2>
+              <h2 className="text-2xl font-medium flex items-end gap-2"><BiSolidInstitution className="text-primary" size={30}/> Mymensingh Poytechnic Institute</h2>
               <p className="font-semibold text-primary">2019-2023</p>
               <p>
                 I&apos;m enim ipsam voluptatem quia voluptas sit aspernatur aut
@@ -75,6 +75,9 @@ const About = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center mt-20">
+        <Resume/>
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@ import api from "../../assets/api.png"
 
 const Skills = () => {
   return (
-    <section id="skills" className="px-12 py-20 lg:px-20  bg-slate-800 my-12 space-y-12">
+    <section id="skills" className="px-12 py-20 lg:px-20  bg-slate-800 my-2 space-y-12">
       <Heading title={"My Skills here"} subtitle={"Skills"} center={true} />
 
       {/* languages  */}
@@ -63,7 +63,7 @@ const Skills = () => {
           {/* 1 */}
           <div className="bg-slate-700 p-4 px-8 inline-block shadow-md rounded-full">
             <div className=" text-black flex gap-3 items-center">
-              <SiExpress size={25} />
+              <SiExpress className="text-slate-400" size={25} />
               <h2 className="text-lg font-medium text-white">Express.js</h2>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Skills = () => {
           <div className="bg-slate-700 p-4 px-8 inline-block shadow-md rounded-full">
             <div className=" text-yellow-500 flex gap-3 items-center">
             <img className="w-[30px] " src={api} alt="" />
-              <h2 className="text-lg font-medium text-white">Contex API</h2>
+              <h2 className="text-lg font-medium text-white">Context API</h2>
             </div>
           </div>
           {/* 1 */}
