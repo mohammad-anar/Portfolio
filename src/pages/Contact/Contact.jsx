@@ -42,18 +42,18 @@ const Contact = () => {
                 size={50}
                 className="mx-auto mb-4 text-primary"
               />
-              <h2 className="text-2xl font-medium text-primary">Phone</h2>
+              <h2 className="text-2xl font-medium text-primary">Location</h2>
               <h2 className="text-lg font-bold">Thursday-Sunday</h2>
-              <h2 className="text-lg"> 01519601128</h2>
+              <h2 className="text-lg">Rd-12/60, Mripur, Dhaka</h2>
             </div>
           </div>
           {/* card 1  */}
           <div className="card flex-1 border w-full border-slate-700 text-white rounded-md text-center">
             <div className="card-body space-y-1">
               <FaVoicemail size={50} className="mx-auto mb-4 text-primary" />
-              <h2 className="text-2xl font-medium text-primary">Phone</h2>
+              <h2 className="text-2xl font-medium text-primary">Email</h2>
               <h2 className="text-lg font-bold">Thursday-Friday</h2>
-              <h2 className="text-lg"> 01519601128</h2>
+              <h2 className="text-lg"> anarul043842@gmail.com</h2>
             </div>
           </div>
         </div>
