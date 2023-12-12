@@ -19,10 +19,10 @@ const Navlinks = () => {
               Home
             </NavLink>
           </div>
-          {/* service  */}
+          {/* portfolio  */}
           <div className="text-lg font-medium">
             <NavLink
-              to="/service"
+              to="/portfolio"
               className={({ isActive, isPending }) =>
                 isPending
                   ? "pending"
@@ -31,7 +31,7 @@ const Navlinks = () => {
                   : ""
               }
             >
-              Service
+              Portfolio
             </NavLink>
           </div>
           {/* blog  */}

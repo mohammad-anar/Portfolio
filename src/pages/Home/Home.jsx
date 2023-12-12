@@ -4,6 +4,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Banner from "./Banner";
 import Experience from "./Experience";
+import Portfolio from "./Portfolio";
 
 import Skills from "./Skills";
 
@@ -19,6 +20,7 @@ const Home = () => {
       {/* experience */}
       <Experience />
       {/* contact  */}
+      <Portfolio />
       <Contact/>
       {/* footer  */}
       <Footer/>
